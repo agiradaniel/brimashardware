@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	 <script src="jquery/jquery.mins.js"></script>
+	<script src="jquery/jquery-ui/jquery-ui.js"></script>
+	<link href="jquery/jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <title>Store</title>
+	
+	<style>
+	body{
+	background-color:#FFFFF0
+	}
+	.endsection{
+	height:90px;
+	background-color:#DCDCDC;
+	}
+	
+@media only screen and (min-width: 1024px) { 
+.adimg{
+width:45%;height:400px;margin:5px auto
+}
+.longcard{
+width:50%;
+margin:40px
+}
+.briboards{
+width:45%;height:600px;margin:5px auto
+}
+.categorybuttons{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+margin-top:30px
+}
+.nav-item{
+margin-right:30px
+}
+.navbar-nav{
+
+}
+.toppart{
+background-color:#DCDCDC;
+display:flex;
+justify-content:center;
+justify-content:space-evenly;
+height:30px
+}
+.cementdiv{
+display:flex;
+flex-direction:row;
+margin-top:40px;
+justify-content:space-around
+}
+.titlediv{
+background-color:#DCDCDC;
+height:70px;
+margin-top:10px
+}
+.topbtn{
+width:60px;
+height:60px
+}
+
+.isactive{
+  display:block
+  }
+  .nonactive{
+  display:none;
+
+  }
+  .dropie{
+  width:170px;
+  margin:3px 0 0 0px;
+  border:1px solid grey;
+  position:absolute;
+  z-index:1;
+  background-color:white
+
+  
+  }
+  .mainlist{
+  list-style:none;
+  text-align:left
+ 
+  }
+  .mainlist li{
+ Font-size:15px;
+ margin:8px 0 0 -60px;
+ 
+ 
+  }
+  .icon{
+  width:12px;
+  height:12px;
+  border-radius:10px;
+  margin:-5px 0 0 10px
+  }
+  .card-img-top{
+  max-height:250px;
+  min-height:250px
+  }
+
+}
+@media only screen and (max-width: 600px) {
+.adimg{
+width:90%;height:200px;margin:5px auto
+}
+.longcard{
+width:90%;
+margin:40px
+}
+.briboards{
+width:90%;height:400px;margin:5px auto
+}
+.toppart{
+display:none
+}
+.titlediv{
+background-color:#DCDCDC;
+height:70px;
+margin-top:60px
+}
+.btn{
+margin-bottom:23px;
+width:250px
+}
+.btn1{
+margin-top:20px
+}
+
+.card{
+ margin:20px auto
+}
+.topbtn{
+width:60px;
+height:60px;
+border-radius:100%
+}
+
+.isactive{
+  display:block
+  }
+  .nonactive{
+  display:none;
+
+  }
+  .dropie{
+  width:170px;
+  margin:3px 0 0 0px;
+  border:1px solid grey;
+  position:absolute;
+  z-index:1;
+  background-color:white;
+  left:65px;
+  margin-top:-20px
+
+  
+  }
+  .mainlist{
+  list-style:none;
+  text-align:left
+ 
+  }
+  .mainlist li{
+ Font-size:15px;
+ margin:8px 0 0 -60px;
+ 
+ 
+  }
+  .icon{
+  width:12px;
+  height:12px;
+  border-radius:10px;
+  margin:-5px 0 0 10px
+  }
+  
+
+
+}
+
+
+@media only screen and (min-width: 600px) and  (max-width: 1023px)  {
+.adimg{
+width:90%;height:400px;margin:5px auto
+}
+.longcard{
+width:90%;
+margin:40px
+}
+.briboards{
+width:90%;height:400px;margin:5px auto
+}
+.titlediv{
+background-color:#DCDCDC;
+height:70px;
+margin-top:60px
+}
+.btn{
+margin-bottom:23px;
+width:250px
+}
+.btn1{
+margin-top:20px
+}
+
+.card{
+ margin:20px auto
+}
+.topbtn{
+width:60px;
+height:60px
+}
+
+.isactive{
+  display:block
+  }
+  .nonactive{
+  display:none;
+
+  }
+  
+  .dropie{
+  width:170px;
+  margin:-20px 0 0 0;
+  border:1px solid grey;
+  position:absolute;
+  z-index:1;
+  background-color:white;
+  left:280px;
+  
+
+  
+  }
+  .mainlist{
+  list-style:none;
+  text-align:left
+ 
+  }
+  .mainlist li{
+ Font-size:15px;
+ margin:8px 0 0 -60px;
+ 
+ 
+  }
+  .icon{
+  width:12px;
+  height:12px;
+  border-radius:10px;
+  margin:-5px 0 0 10px
+  }
+  .toppart{
+  background-color:#DCDCDC;
+  display:flex;
+  justify-content:center;
+  justify-content:space-evenly;
+  height:30px
+  }
+
+
+}
+</style>
+	
+	
+  </head>
+  <body>
+    
+	<div class="toppart">
+  <span>(254)0721212381</span>
+  <span>Kombo Munyiri road near Absa bank ,Nairobi</span>
+  <span>brimasent@gmail.com</span>
+  </div>	
+	
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item ">
+        <a class="nav-link  "  onclick="location.assign('https://www.agiratechnologies.co.ke/backups/kiama');">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "  onclick="location.assign('https://www.agiratechnologies.co.ke/backups/kiama/aboutus/aboutus.html');">About us</a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-item nav-link active"  onclick="location.assign('https://www.agiratechnologies.co.ke/backups/kiama/store/store.html');">Store</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-item nav-link "  onclick="location.assign('https://www.agiratechnologies.co.ke/backups/kiama/contactsanddirections/contactsanddirections.html');">Contacts and directions</a>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Quick links
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://www.agiratechnologies.co.ke/backups/kiama/#details">Payment details</a>
+          <a class="dropdown-item" href="https://www.agiratechnologies.co.ke/backups/kiama/store/store.html#boards">Boards</a>
+          <a class="dropdown-item" href="https://www.agiratechnologies.co.ke/backups/kiama/store/store.html#taps">Taps</a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+    
+<h1 class="text-center" style="font-family:oblique;font-weight:bold;font-variant: small-caps;margin-top:10px">Store</h1>	
+<div  style="font-weight:100;text-align:center;font-size:130%" >What are you looking for?</div>
+
+
+<div class="categorybuttons text-center">
+
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Plumbing material
+  </button>
+  <div class="dropdown-menu">
+   <a class="dropdown-item" href="#taps">Taps</a>
+    <a class="dropdown-item" href="#shower">Shower heads<a>
+    <a class="dropdown-item" href="#plasticpipes">Plastic Pipes</a>
+	 <a class="dropdown-item" href="#toilets">Toilets<a>
+	 <a class="dropdown-item" href="#kitchensink">Kitchen sinks<a>
+	<a class="dropdown-item" href="#connectors">Connectors<a>
+	<a class="dropdown-item" href="#joints">More<a>
+  </div>
+</div>
+
+
+<div>
+	
+	<button type="button" class="btn btn-primary btn-lg" id="dropdownbtn2" style="font-size:17px">Finishing<img src="dropdownicon.png" class="icon"></button>
+	
+	<div class="nonactive dropie findrop" id="dropdiv2">
+	<ul class="mainlist">
+	
+	<li><a class="dropdown-item" href="#curtainrods">Curtain rods</a></li>
+	<li><a class="dropdown-item" href="#idoors">Mahogany doors</a></li>
+	<li><a class="dropdown-item" href="#ihinges">Oxford mom hinges</a></li>
+	<li><a class="dropdown-item" href="#itiles">Tiles</a></li>
+	<li><a class="dropdown-item" href="#locks">Locks</a></li>
+	<li><a class="dropdown-item" href="#soapdish">Wall mount soap dish</a></li>
+	<li><a class="dropdown-item" href="#racksandhooks">Towel racks and hooks</a></li>
+	</ul>
+	</div>
+	
+</div>
+
+<!--
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Finishing
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#doors">Curtain rods</a>
+    <a class="dropdown-item" href="#doors">Mahogany doors</a>
+    <a class="dropdown-item" href="#hinges">Oxford mom hinges</a>
+    <a class="dropdown-item" href="#tiles">Tiles</a>
+	<a class="dropdown-item" href="#doors">Locks</a>
+	<a class="dropdown-item" href="#doors">Drawer rails</a>
+	<a class="dropdown-item" href="#doors">Socket and plug</a>
+	<a class="dropdown-item" href="#doors">Cover mats</a>
+	<a class="dropdown-item" href="#cement">More</a>
+  </div>
+</div>
+-->
+
+<a href="#boards"><button type="button" class="btn btn-primary">boards</button></a>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Utilities
+  </button>
+  <div class="dropdown-menu">
+    
+	<a class="dropdown-item" href="#padlocks">Padlocks</a>
+    <a class="dropdown-item" href="#soapdispenser">Soap dispenser</a>
+	<a class="dropdown-item" href="#t&s">Tissue & serviette dispenser</a>
+	<a class="dropdown-item" href="#">More</a>
+  </div>
+</div>
+
+
+
+
+<!--
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Paint
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#undercoat">Undercoat</a>
+    <a class="dropdown-item" href="#oilbased">Oil-based Paint</a>
+    <a class="dropdown-item" href="#waterbased">Water-based Paint</a>
+	<a class="dropdown-item" href="#">Outdoor Paint</a>
+	<a class="dropdown-item" href="#">Thinner</a>
+	<a class="dropdown-item" href="#cement">More</a>
+  </div>
+</div>
+-->
+
+
+
+
+<div>
+	
+	<button type="button" class="btn btn-primary btn-lg" id="dropdownbtn" style="font-size:17px">Ceiling material<img src="dropdownicon.png" class="icon"></button>
+	
+	<div class="nonactive dropie" id="dropdiv">
+	<ul class="mainlist">
+	
+    <li><a class="dropdown-item" href="#pvcceiling">PVC Ceiling</a></li>
+    <li><a class="dropdown-item" href="#graniteceiling">Granite ceiling</a></li>
+	<li><a class="dropdown-item" href="#joints">More<a></li>
+	</ul>
+	</div>
+	
+	</div>
+	
+	<a href="#bripaint"><button type="button" class="btn btn-primary">Paint</button></a>
+	
+<!--
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Roofing
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#ironsheets">Iron Sheets</a>
+    <a class="dropdown-item" href="#celeingboard">PVC Ceiling</a>
+    <a class="dropdown-item" href="#mabatinails">Roof Nails</a>
+	<a class="dropdown-item" href="#mabatinails">Rain gutters</a>
+	<a class="dropdown-item" href="#joints">More<a>
+  </div>
+</div>
+-->
+
+<div>
+	
+	<button type="button" class="btn btn-primary btn-lg" id="dropdownbtn1" style="font-size:17px">Materials and tools<img src="dropdownicon.png" class="icon"></button>
+	
+	<div class="nonactive dropie" id="dropdiv1">
+	<ul class="mainlist">
+	
+	<li><a class="dropdown-item" href="#tools">Materials and Tools</a></li>
+
+	</ul>
+	</div>
+	
+</div>
+
+<!--
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Materials and tools
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#cement">Measuring tape</a>
+	<a class="dropdown-item" href="#cement">Steel nails</a>
+	<a class="dropdown-item" href="#">ply wood</a>
+  </div>
+</div>
+-->
+
+
+</div>
+	
+<div class="titlediv  "><h3 class="text-center align-middle Title1" style="font-family:oblique;font-weight:bold;font-variant: small-caps;">Plumbing Material</h3></div>	
+
+<img class=" mx-auto d-block adimg" src="FotoJet.jpg" style="">
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center " id="taps"> Taps</h2></div>
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="britaps.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Taps</h5>
+     <p class="card-text">Pillar taps, mixer taps, ball taps, longneck taps and monoblocs all inclusive</p>
+  </div>
+</div>
+<!--
+<div class="cementdiv">
+
+<div class="card" style="width: 18rem;">
+  <img src="1tap.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Tap1</h5> <strong><p>...</p></strong> </p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="2tap.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Tap2</h5> <strong><p>...</p></strong> </p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="3tap.jpg" class="card-img-top" alt="..." ">
+  <div class="card-body">
+   <p class="card-text"><h5>Tap3</h5> <strong><p>...</p></strong> </p>
+  </div>
+</div>
+-->
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="shower" style="margin-top:40px">Shower </h2></div>
+<div class="cementdiv">
+
+<div class="card" style="width: 18rem;">
+  <img src="shower1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Overhead showers</h5></p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="shower2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Electric shower</h5></p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="shower3.jpg" class="card-img-top" alt="..." ">
+  <div class="card-body">
+    <p class="card-text"><h5>Long neck shower</h5></p>
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="plasticpipes" style="margin-top:40px">Plastic pipes</h2></div>
+
+<div class="card mb-3 mx-auto d-block longcard">
+  <img class="card-img-top" src="bripipes.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Plastic pipes</h5>
+    
+  </div>
+</div>
+
+<!--
+<div class="cementdiv">
+
+<div class="card" style="width: 18rem;">
+  <img src="pipe1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>pipe1</h5>Price</p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="pipe2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>pipe2</h5></p>
+  </div>
+</div>
+
+</div>
+-->
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="toilets" style="margin-top:40px">Toilets</h2></div>
+<div class="cementdiv">
+
+<div class="card" style="width: 18rem;">
+  <img src="toilet1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Ceramic toilet + sink</h5></p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="toilet2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Stand alone toilet</h5></p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="toilet3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Ceramic squat toilet</h5></p>
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="kitchensink" style="margin-top:40px">kitchen sink</h2></div>
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="kitchensink.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Kitchen sinks</h5>
+    
+  </div>
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="connectors" style="margin-top:40px">connectors</h2></div>
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="connectors.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Plastic + metallic connectors</h5>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;">Finishing</h3></div>
+
+<img class=" mx-auto d-block adimg" src="finishing.jpg" >
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center"  id="curtainrods" >Curtain rods</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="curtainrods.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">curtain rods</h5>
+	 <p class="card-text">Available in all sizes</p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="idoors" style="margin-top:40px">Doors</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="doors.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Modern design wooden doors</h5>
+	 <p class="card-text"></p>
+    
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="ihinges" style="margin-top:40px">Hinges</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="hinges.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Oxford mom hinges</h5>
+	 <p class="card-text"></p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="itiles" style="margin-top:40px">Tiles</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="tiles.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Tiles</h5>
+	 <p class="card-text">Ceramic tiles, marble tiles, granite tiles, wooden tiles all inclusive</p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="locks" style="margin-top:40px">Locks</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="doorlocks.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Locks</h5>
+	 <p class="card-text">Hand levers, knob locks, mortise locks, handlesets, deadbolts, barrel bolts, chain locks </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="locks" style="margin-top:40px">Wall mount soap dish</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="soapdishimg.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Wall mount soap dish</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="locks" style="margin-top:40px">Towel racks and hooks</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" >
+  <img class="card-img-top" src="towelracksandhooks.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Towel racks and hooks</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;" id="boards">Boards</h3></div>
+<div><img class=" mx-auto d-block briboards" src="brimasboards.jpg" style="">
+<h4 class="card-title text-center">Featured boards</h4>
+<div class="d-flex">
+<ul class="list-inline mx-auto justify-content-center texe-center">
+<li>Sapele</li>
+<li>Etimore</li>
+<li>Dark walnut</li>
+<li>White board</li>
+<li>Cherry</li>
+<li>Salsa</li>
+</ul>
+</div>
+</div>
+<!--
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="undercoat">Undercoat</h2></div>
+<div class="cementdiv">
+
+<div class="card" style="width: 18rem;">
+  <img src="undercoat1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Simba Cement</h5>Price</p>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="undercoat2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text"><h5>Mombasa Cement</h5></p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="undercoat3.jpg" class="card-img-top" alt="..." ">
+  <div class="card-body">
+    <p class="card-text"><h5>Bamburi Cement</h5></p>
+  </div>
+</div>
+-->
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;">Utilities</h3></div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="padlocks">Padlocks</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="brimaspadlocks.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Padlocks</h5>
+	 <p class="card-text">High security padlocks, weatherproof padlocks, combinational padlocks, long shackle padlocks all inclusive </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="soapdispenser">Soap dispenser</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="soapdispenser.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">plastic soap dispensers</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="t&s">Tissue and serviette dispenser</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="tissuedispenser.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">tissue and serviette dispenser</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;">Ceiling material</h3></div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="pvcceiling">PVC ceiling</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="pvcceleing.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">PVC ceiling</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+<div style="background-color:#F8F9FA;height:60px"><h2 class="text-center" id="graniteceiling">Granite celeing</h2></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="graniteceleing.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Granite celeing</h5>
+	 <p class="card-text"> </p>
+    
+  </div>
+</div>
+
+</div>
+
+
+<!--<div class="text-center"><a href="tiles/tiles.html"><button class="btn btn-primary btn-lg storebtn " style="margin-top:30px">view more</button></a></DIV>-->
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;" id="bripaint">Paint</h3></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="bripaint.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Paint</h5>
+	 <p class="card-text">Oil paint, Enamel paint, Cement paint, Anti-corrosive paint all inclusive</p>
+    
+  </div>
+</div>
+
+</div>
+
+
+<div class="titlediv"><h3 class="text-center" style="font-family:oblique;font-weight:bold;font-variant:small-caps;" id="tools">Materials and tools</h3></div>
+<div class="cementdiv">
+
+<div class="card mb-3 mx-auto d-block longcard" style="">
+  <img class="card-img-top" src="britools.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Materials and tools</h5>
+	 <p class="card-text">Pliars, spades, hand scoops, paint brush, measuring tapes, shovels, seesaw </p>
+    
+  </div>
+</div>
+
+</div>
+
+	
+	
+<div class="fixed-bottom text-right"><a href="#"> <img src="backtotop.png" class="topbtn"></a></div>
+
+<footer class="endsection footer">
+<div class="text-center" >
+<p style="position:relative;top:20px">Brimas Hardware Limited &copy 2020</br>
+Designed by <a href="#" onclick="location.assign('https://www.agiratechnologies.co.ke');">pySwift Technologies</a></p>
+</div>
+
+</footer>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  <script>
+	
+	$("#dropdownbtn").click(function(){
+		
+		if ($("#dropdiv").hasClass("nonactive")) {
+		
+		$("#dropdiv").removeClass("nonactive") && $("#dropdiv").addClass("isactive");
+		
+		}else{
+		
+		$("#dropdiv").removeClass("isactive") && $("#dropdiv").addClass("nonactive");
+		
+		}
+		
+		
+	});		 
+
+	//code to close the dropdiv if the button is clicked outside
+	document.addEventListener('click', function(event) {
+	var isClickInside = document.getElementById('dropdownbtn').contains(event.target);
+
+	if (!isClickInside) {
+    
+		$("#dropdiv").removeClass("isactive") && $("#dropdiv").addClass("nonactive");
+	}
+	});
+	
+	$("#dropdownbtn1").click(function(){
+		
+		if ($("#dropdiv1").hasClass("nonactive")) {
+		
+		$("#dropdiv1").removeClass("nonactive") && $("#dropdiv1").addClass("isactive");
+		
+		}else{
+		
+		$("#dropdiv1").removeClass("isactive") && $("#dropdiv1").addClass("nonactive");
+		
+		}
+		
+		
+	});		 
+
+
+	//code to close the dropdiv if the button is clicked outside
+	document.addEventListener('click', function(event) {
+	var isClickInside = document.getElementById('dropdownbtn1').contains(event.target);
+
+	if (!isClickInside) {
+    
+		$("#dropdiv1").removeClass("isactive") && $("#dropdiv1").addClass("nonactive");
+	}
+	});
+	
+	$("#dropdownbtn2").click(function(){
+		
+		if ($("#dropdiv2").hasClass("nonactive")) {
+		
+		$("#dropdiv2").removeClass("nonactive") && $("#dropdiv2").addClass("isactive");
+		
+		}else{
+		
+		$("#dropdiv2").removeClass("isactive") && $("#dropdiv2").addClass("nonactive");
+		
+		}
+		
+		
+	});		 
+
+
+	//code to close the dropdiv if the button is clicked outside
+	document.addEventListener('click', function(event) {
+	var isClickInside = document.getElementById('dropdownbtn2').contains(event.target);
+
+	if (!isClickInside) {
+    
+		$("#dropdiv2").removeClass("isactive") && $("#dropdiv2").addClass("nonactive");
+	}
+	});
+	
+	</script>
+  
+  </body>
+</html>
